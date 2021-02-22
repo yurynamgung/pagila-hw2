@@ -9,13 +9,3 @@
  * HINT:
  * This can be solved using either a LEFT JOIN or the NOT IN operator.
  */
-SELECT 
-    last_name,
-    first_name
-FROM customer
-RIGHT JOIN actor USING (last_name,first_name)
-WHERE
-    customer_id IS NULL
-ORDER BY last_name,first_name;
-
-
